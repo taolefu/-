@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DescriptionActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#267BC0"
+            android:text="video description"
+            android:textColor="@android:color/black"
+            android:gravity="center_horizontal|center_vertical"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:textColor="@android:color/black"
+            android:id="@+id/description"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="5dp"
+            android:text="this is the description of video"
+            />
+
+
+          <ImageView
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:src="@drawable/play"
+              android:onClick="playVideo"
+              android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    
+</android.support.constraint.ConstraintLayout>
